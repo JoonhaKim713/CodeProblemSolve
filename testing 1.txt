@@ -6,8 +6,8 @@ namespace A
 {
     int size;
     int i;
-    int e;
-    int combination;
+    std::string name;
+    
     
     int Option()
     {
@@ -18,15 +18,18 @@ namespace A
         return size;
     }
     
-    int CombinationCal()
+    std::string CombinationCal()
     {
+        std::string combinationArray[size];
         for (i = 0; i < size; i++)
         {
-            std::cin >> e;
-            combination[] = e;
+            std::cout << "Number " << (i + 1) << " elements: ";
+            std::cin >> name;
+            combinationArray[i] = name;
+            std::cout << std::endl;
         }
     
-        return combination;
+        return combinationArray[size];
     }
     
         
@@ -51,17 +54,6 @@ int main()
     A::Option();
     A::CombinationCal();
     std::cout << A::size;
-    for (A::i = 0; A::i < A::size ; A::i++)
-    {
-        std::cout << A::combination[A::i];
-    }
+    
 
 }
-
-
-
-
-
-
-
-
