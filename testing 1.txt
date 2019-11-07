@@ -33,7 +33,6 @@ namespace A
             std::cout << "Number " << (i + 1) << " elements: ";
             std::cin >> name;
             combinationArray[i] = name;
-            std::cout << combinationArray[i] << std::endl;
             
         }
         
@@ -45,7 +44,7 @@ namespace A
                 
                 for (v3 = v2 + 1; v3 < size; v3++)
                 {
-                    std::cout << combinationArray[v1] << "" << combinationArray[v2] << "" << combinationArray[v3] << std::endl;
+                    std::cout << combinationArray[v1] << " " << combinationArray[v2] << " " << combinationArray[v3] << std::endl;
                 }
             }
         }
