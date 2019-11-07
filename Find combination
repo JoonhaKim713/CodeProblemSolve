@@ -51,7 +51,7 @@ namespace A
         
     }
     
-    int fact(int n)
+    unsigned long long int fact(unsigned long long int n)
     {
         if ((n==0||n==1))
         {
@@ -71,12 +71,12 @@ int main()
     A::Option();
     A::CombinationCal();
     
-    int n, r, b;
+    unsigned long long int n, r, b;
     n = A::size;
     r = 3;
     b = n - r;
    
-    /* std::cout << n << std::endl;
+    /*std::cout << n << std::endl;
     std::cout << b << std::endl;
     std::cout << r << std::endl; */
     
@@ -86,7 +86,7 @@ int main()
     
     /* std::cout << n << std::endl;
     std::cout << b << std::endl;
-    std::cout << r << std::endl; */
+    std::cout << r << std::endl;*/
     
 
     int result = n / (r * b); 
