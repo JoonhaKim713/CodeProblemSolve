@@ -51,39 +51,46 @@ namespace A
         
     }
     
-    /*double Howmanycombination(double factorial)
+    int fact(int n)
     {
-        for (int i = 1; i <= size; ++i)
+        if ((n==0||n==1))
         {
-            factorial *= i;
+            return 1;
         }
-         
-        return  factorial;
-    } */
+        else 
+        {
+            return n * fact(n-1);
+        }
+    }
     
 }
 
 
 int main()
 {
-    /*
-    double a, b, c;
-    a = A::size;
-    b = a - c;
-    c = 3;
-    A::Howmanycombination(a);
-    
-    std::cout << a << std::endl;
-    
-    A::Howmanycombination(b);
-    
-    A::Howmanycombination(c);
-    
-    int result = a / (c*b);
-    std::cout << result;
-    */
-    
     A::Option();
     A::CombinationCal();
+    
+    int n, r, b;
+    n = A::size;
+    r = 3;
+    b = n - r;
+   
+    /* std::cout << n << std::endl;
+    std::cout << b << std::endl;
+    std::cout << r << std::endl; */
+    
+    n = A::fact(n);
+    r = A::fact(r);
+    b = A::fact(b);
+    
+    /* std::cout << n << std::endl;
+    std::cout << b << std::endl;
+    std::cout << r << std::endl; */
+    
+
+    int result = n / (r * b); 
+    
+    std::cout << "Total combination: " << result;  
     
 }
